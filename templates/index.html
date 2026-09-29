@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Carbono</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+<body>
+
+  <!-- navbar: barra de navegação -->
+  <!-- navbar-expand-lg: em telas grandes (lg) a navbar fica expandida; em telas menores, colapsa -->
+  <!-- navbar-dark bg-dark: texto claro sobre fundo escuro -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!-- container: centraliza o conteúdo da navbar -->
+    <div class="container">
+
+      <!-- navbar-brand: o "logo" ou nome da aplicação à esquerda -->
+      <a class="navbar-brand" href="/">Calculadora de Carbono</a>
+
+      <!-- navbar-toggler: o botão hamburguer que aparece em telas pequenas -->
+      <!-- data-bs-toggle e data-bs-target: conectam o botão ao menu colapsável -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- collapse navbar-collapse: o conjunto de links que colapsa em telas pequenas -->
+      <!-- id="navbarNav": deve bater com o data-bs-target do botão acima -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <!-- navbar-nav ms-auto: lista de links, ms-auto empurra para a direita -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <!-- nav-link active: link ativo (página atual) fica destacado -->
+            <a class="nav-link active" href="/">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/calcular">Calcular</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal da página -->
+  <div class="container mt-5">
+    <h1 class="display-4">Bem-vindo</h1>
+    <p class="lead">
+      Esta é a  Calculadora de Carbono,
+      desenvolvendor Gabriel Angelotti.
+    </p>
+
+    <!-- alert alert-info: caixa de informação azul -->
+    <div class="alert alert-info">
+      <strong>Funcionalidade:</strong> A Calculadora de Carbono é uma ferramenta que permite calcular a quantidade de carbono emitida por diferentes atividades e produtos. Ela ajuda os usuários a entenderem seu impacto ambiental e a tomarem decisões mais conscientes para reduzir sua pegada de carbono.
+    </div>
+
+    <a href="/sobre" class="btn btn-primary btn-lg">Equipe</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+</html>
